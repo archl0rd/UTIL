@@ -1,0 +1,18 @@
+#Exibir o uso de memória pelos processos abertos
+ps -e -orss=,args= | sort -b -k1,1n | pr -TW$COLUMNS
+
+#Exibir os endereços de IP ativos conectados ao servidor
+netstat -an|grep ESTABLISHED|awk '{print $5}'|awk -F: '{print $1}'|sort|uniq -c|awk '{ printf("%s\t%s\t",$2,$1); for (i = 0; i < $1; i++) {printf("*")}; print ""}'
+
+#Monitorar o uso de memória
+watch -n 5 free –m
+
+# Exibir os logs de acesso ao servidor
+last
+last -f /var/log/wtmp.1 #(exibe os logins com status de “arquivados”);
+lastlog #(exibe todos os usuários que já tiveram — ou não — acesso externo ao servidor).
+
+#Consultar as portas abertas e serviços
+
+netstat –apn |grep <PORTA>
+lsof-i tcp: <PORTA>
