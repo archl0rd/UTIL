@@ -1,4 +1,4 @@
-# Repositório com diversos arquivos de configuração do linux!
-#
-# Adriano Freitas - adrianofreitas.me
-# 
+# Arquivos de configuração
+# Adriano Freitas - https://adrianofreitas.me
+
+- Repositório com diversos arquivos de configuração do linux!
