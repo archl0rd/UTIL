@@ -1,8 +1,3 @@
-# /etc/fail2ban/jail.local
-#
-# Adriano Freitas - adrianofreitas.me
-# 
-
 # Fail2Ban configuration file.
 #
 # This file was composed for Debian systems from the original one
@@ -72,7 +67,7 @@ destemail = log@adrianofreitas.me
 sendername = Fail2Ban
 
 # Email address of the sender
-sender = fail2ban@zer092.com.br
+sender = fail2ban@server
 
 #
 # ACTIONS

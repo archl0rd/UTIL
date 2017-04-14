@@ -1,0 +1,12 @@
+DELETE FROM tabela
+WHERE coluna='valor' 
+
+mysqldump -u root -p"senha!!"  --database painelssh > jbserver-database.sql
+
+mysql -u root mysql mysql> 
+UPDATE user SET Password=PASSWORD('novasenha!!') WHERE User='root'; mysql>
+FLUSH PRIVILEGES;
+
+#Mudar senha
+mysqladmin -u root -p password 'nova-senha!!'
+ 

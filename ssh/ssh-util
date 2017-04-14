@@ -1,0 +1,7 @@
+# Adicionar chave pubica para um servidor qualquer
+# permitindo assim a autenticacaoo automatica
+ssh-copy-id -i .ssh/id_rsa.pub -p <port> user@host
+
+ssh -fNL 8888:localhost:80 -C4 -p<ssh-port> <host>
+
+ssh -fN <user>@<host> -p<ssh-port> -D<local-port>
