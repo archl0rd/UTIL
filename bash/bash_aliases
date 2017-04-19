@@ -1,0 +1,20 @@
+# ~/.bash_aliases
+#
+# Adriano Freitas - adrianofreitas.me
+#
+
+
+#alias steam="LD_PRELOAD='/usr/$LIB/libstdc++.so.6 /usr/$LIB/libgcc_s.so.1 /usr/$'"
+
+# You may uncomment the following lines if you want `ls' to be colorized:
+alias ls='ls --color=auto'
+#
+# Some more alias to avoid making mistakes:
+# alias rm='rm -i'
+# alias cp='cp -i'
+# alias mv='mv -i'
+
+
+#Scripts
+alias shredR='sh /home/afreitas/Scripts/shred-R.sh'
+alias firewall='sudo sh /home/afreitas/Scripts/firewall.sh'
